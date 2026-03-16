@@ -1,5 +1,3 @@
-# posicao na fonte, matricula, nome, telefone
-
 1,111111,Daphne Rocha Amigo,28999515636
 2,222222,Brenno Gomes Breda,27998507767
 3,333333,Larissa Antunes Meireles,27997421189
