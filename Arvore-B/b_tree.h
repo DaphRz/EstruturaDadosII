@@ -5,15 +5,6 @@
 
 #define M 3
 
-typedef struct _pagina {
-    int chave[M -1];
-    struct _pagina *filho[M];
-    int posicao[M-1];
-    int folha;
-} Pagina;
-
-typedef Pagina *ArvoreB;
-
 typedef struct dado {
     int posicao;
     int matricula;
@@ -35,11 +26,10 @@ typedef struct NO {
 
 typedef struct NO *arvB;
 
-arvB *criarArv();
-
+arvB *criarArv(FILE *dados);
 NO *criarNO();
 
-int cadastrar(FILE *arvore, dado *elementos, NO *no);
+int cadastrar(NO *no, chave *chave);
 int pesquisar(FILE *arvore, int matricula);
 int gravar(FILE *arvore);
 int sair(FILE *arvore);
