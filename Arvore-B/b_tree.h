@@ -24,17 +24,18 @@ typedef struct NO {
     int eh_folha;
 } NO;
 
-typedef struct NO *arvB;
-
-arvB *criarArv(FILE *dados);
+// Declaração das funções
+NO *criarArv(FILE *dados);
 NO *criarNO();
 
 int cadastrar(NO *no, chave *chave);
-int pesquisar(FILE *arvore, int matricula);
-int gravar(FILE *arvore);
-int sair(FILE *arvore);
+int cadastrarNovoRegistro(NO *btree, FILE *dados);
+int buscarRegistro(NO *btree, FILE *dados);
+int pesquisar(FILE *arquivo, NO *arvore, int matricula);
+int gravar(NO *no, FILE *arvore);
+int sair(NO *no);
 
-// FILE *data = fonte.tx
-// FILE *arvore = indice.txt
+// FILE *dados = fonte.txt
+// FILE *indice = indice.txt
 
 #endif
